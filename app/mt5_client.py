@@ -43,6 +43,9 @@
 #     return True
 
 
+
+
+
 # def get_gold_data(timeframe=mt5.TIMEFRAME_M15, bars=50):
 #     """
 #     XAUUSD uchun OHLC data olish.
