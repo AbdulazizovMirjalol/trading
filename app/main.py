@@ -51,12 +51,6 @@ def run_once():
 
 
 
-
-
-
-
-
-
         # 3. D1 trend filter
         if result["final_signal"] == "BUY" and result["d1_trend"] == "BEARISH":
             result["final_signal"] = "WAIT"
@@ -81,6 +75,7 @@ def run_once():
             h1_timeframe_name=result["h1_timeframe_name"],
             m15_timeframe_name=result["m15_timeframe_name"],
         )
+
 
         show_signal_mode(SIGNAL_MODE)
         show_price_table(result["m15_df"])
