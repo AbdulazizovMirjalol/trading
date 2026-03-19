@@ -5,6 +5,7 @@ import os
 import MetaTrader5 as mt5
 import matplotlib.pyplot as plt
 
+
 from mt5_client import connect_mt5, disconnect_mt5
 from analyzer import run_analysis
 from config import SIGNAL_MODE, ENABLE_AUTO_TRADE, LOT_SIZE
@@ -46,6 +47,15 @@ def run_once():
         if result["is_news_time"]:
             result["final_signal"] = "WAIT"
             result["reason"] = f"STOP: {result['news_reason']}"
+
+
+
+
+
+
+
+
+
 
         # 3. D1 trend filter
         if result["final_signal"] == "BUY" and result["d1_trend"] == "BEARISH":
